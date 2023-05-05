@@ -36,7 +36,6 @@ main p {
 main strong {
     color: var(--cor5);
     font-weight: bold;
-    padding: 2px 6px;
 }
 
 body {
