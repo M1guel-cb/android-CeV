@@ -25,6 +25,10 @@
     --fonte-android: 'android', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main p { 
     text-align: justify;
     margin: 15px 0px;
