@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @font-face {
     font-family: "android";
-    src: url("../fontes/idroid.otf") format("opentype");
+    src: url("../fonts/idroid.otf") format("opentype");
     font-weight: normal;
 }
 
@@ -15,21 +15,21 @@
 
 :root {
     --cor1: #e0e6bd;
-    --cor2: #1ADB74;
-    --cor3: #14A85A;
-    --cor4: #275C3F;
-    --cor5: #0B5C31;
+    --cor2: #1adb74;
+    --cor3: #14a85a;
+    --cor4: #275c3f;
+    --cor5: #0b5c31;
     --cor6: #1e442f;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'android', cursive;
+    --fonte-destaque: "Bebas Neue", cursive;
+    --fonte-android: "android", cursive;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-main p { 
+main p {
     text-align: justify;
     margin: 15px 0px;
     text-indent: 40px;
@@ -133,8 +133,7 @@ main {
     padding: 20px;
     max-width: 1000px;
     min-width: 300px;
-    margin-bottom: 30px
-    
+    margin-bottom: 30px;
 }
 
 main img {
@@ -148,14 +147,14 @@ main img {
 }
 
 aside {
-    background-color: #1ADB74;
+    background-color: #1adb74;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
 }
 
 aside a {
-    background-color: #14A85A;
+    background-color: #14a85a;
 }
 
 aside a:hover {
@@ -174,7 +173,7 @@ aside h3 {
 }
 
 ul {
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: "\2714\00A0\00A0";
     list-style-position: inside;
     columns: 2;
 }
@@ -227,4 +226,50 @@ footer p {
     padding: 5px;
     text-align: center;
     font-size: 0.8em;
+}
+
+#voltar-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    left: 95%;
+    bottom: 20px;
+
+    transform: translate(-20px, -20px);
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--cor5);
+    cursor: pointer;
+
+    color: transparent;
+}
+
+#voltar-topo i {
+    color: var(--cor1);
+    font-size: 40px;
+    text-decoration: none;
+}
+
+@media screen and (width <= 768px) {
+    #voltar-topo {
+        width: 75px;
+        height: 75px;
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (width <= 600px) {
+    #voltar-topo {
+        width: 50px;
+        height: 50px;
+        i {
+            font-size: 20px;
+        }
+    }
 }
